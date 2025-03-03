@@ -1,0 +1,3980 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/******************default*********************************/
+* {
+  scroll-behavior: smooth;
+  font-family: "Barlow Condensed", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+h1 {
+  color: #fff;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  color: #000;
+  font-size: 50px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 6.21px;
+  background-color: #e65125;
+  left: 0;
+}
+
+h3 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  position: relative;
+}
+
+h4 {
+  margin: 0;
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 40px */
+}
+
+h5 {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  /* 32px */
+  position: relative;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: #6e6e6e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.active {
+  color: #e65125 !important;
+}
+
+.dropdown .active:hover {
+  color: #fff !important;
+}
+
+.same-color {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s;
+  background-color: #e65125;
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.same-color::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ef8b31;
+  transition: all 0.3s;
+  color: white;
+  /* z-index: 2; */
+}
+
+.same-color:hover::before {
+  color: black;
+  width: 100%;
+  z-index: -1;
+}
+
+.banner-text h2 {
+  color: #fff;
+}
+
+.banner-text li a {
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s;
+}
+
+.home,
+.home1 {
+  position: relative;
+}
+
+li.home::after {
+  content: "/";
+  color: white;
+  position: absolute;
+  right: -27px;
+  font-size: 30px;
+  font-weight: 700;
+  top: 0;
+}
+
+li.home1::after {
+  content: "/";
+  color: white;
+  position: absolute;
+  /* left: 75px; */
+  font-size: 30px;
+  font-weight: 700;
+  right: -28px;
+  top: 0;
+}
+
+.banner-text li a:hover {
+  color: #e65125;
+}
+
+.banner-text ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+  column-gap: 45px;
+  margin-top: 27px;
+}
+
+/*defualt end*/
+/*header*/
+header {
+  width: 100%;
+  position: relative;
+}
+
+section.header-top {
+  background: black;
+  color: white;
+  padding: 10px 0;
+}
+
+.top-number-mail-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-number-mail ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-number-mail svg {
+  padding-right: 10px;
+  width: 28px;
+}
+
+.top-number-mail li {
+  padding-left: 30px;
+}
+
+.top-number-mail li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+select#currency {
+  background: black;
+  color: #fff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
+  padding-left: 11px;
+}
+
+.header-logo-menu-search-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.header-logo {
+  width: 10%;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-menu {
+  width: 100%;
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 50px; */
+}
+
+.header-toogle-menu li a {
+  font-size: 19px;
+}
+
+.header-menu li a {
+  color: #000;
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+
+.header-menu li a:hover {
+  color: #e65125;
+}
+
+.header-menu li {
+  padding: 10px 30px;
+}
+
+li.drop {
+  position: relative;
+}
+
+li.drop:hover .dropdown {
+  display: block;
+}
+
+li.drop a {
+  display: flex;
+  align-items: end;
+}
+
+.dropdown {
+  display: none;
+  border: 1px solid #686868;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown li {
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown ul li a {
+  padding: 20px 6px;
+}
+
+.dropdown ul li a:hover {
+  background-color: #e65125;
+  color: white;
+}
+
+.dropdown ul {
+  flex-direction: column;
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+}
+
+.header-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-toogle-menu li a {
+  color: black;
+  padding: 13px 0;
+}
+
+.header-menu-main {
+  width: 70%;
+}
+
+.header-search-button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 12%;
+  column-gap: 20px;
+}
+
+.searchinput {
+  position: relative;
+}
+
+.searchinput input[type="search"] {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: #e652256c;
+  border: 1px solid lightgray;
+  color: #000;
+}
+
+.searchinput input[type="search"]::placeholder {
+  color: #000;
+}
+
+i.fa-solid.fa-magnifying-glass {
+  font-size: 26px;
+  color: #6e6e6e;
+  cursor: pointer;
+}
+
+/* .ttcross {
+  font-size: 26px;
+  color: #6e6e6e;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+.ttcross {
+  font-size: 35px;
+  color: #6e6e6e !important;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1px 15px 10px 15px;
+  background: #ffffffc2;
+  border-bottom-left-radius: 40px;
+}
+
+.search {
+  position: absolute;
+  width: 196px;
+  z-index: 2;
+  top: -24px;
+  left: -196px;
+}
+
+.search {
+  display: none;
+}
+
+.header-search-button .book {
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.header-search-button .book:hover {
+  color: black;
+  z-index: 1;
+}
+
+.header-toggle-menu {
+  display: none;
+}
+
+.tcross {
+  display: none;
+}
+
+.header-toogle-menu {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  top: 81px;
+  width: 100%;
+  left: 0;
+
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.header-toogle-menu {
+  padding: 20px 20px;
+}
+
+.header-toggle {
+  display: none;
+  font-size: 30px;
+  /* position: relative; */
+}
+
+/***********banner**********************/
+button.bookcall {
+  padding: 13px 30px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.bookcall:hover {
+  color: black;
+  transition: all 0.3s;
+}
+
+.bannertext h3 {
+  max-width: 1095px;
+  margin: 20px auto;
+}
+
+.banner {
+  width: 100%;
+  background-image: url(../image/banner-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-blackshade {
+  padding: 237px 0;
+  background-color: #00000070;
+}
+
+.bannertext.slick-slide.slick-current.slick-active {
+  text-align: center;
+}
+
+.bannertext.slick-slide {
+  text-align: center;
+}
+
+/*************************************about******************************************/
+.about {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.about-video-text {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* column-gap: 40px; */
+}
+
+.about-video-text::after {
+  content: "";
+  background: url(../image/book.svg);
+  top: -119px;
+  left: -166px;
+  position: absolute;
+  width: 146px;
+  height: 171px;
+  background-repeat: no-repeat;
+}
+
+.about-video-text::before {
+  content: "";
+  background: url(../image/plane.svg);
+  top: -150px;
+  right: -166px;
+  position: absolute;
+  width: 227px;
+  height: 156px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.about-video {
+  position: relative;
+  width: 48%;
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.about-video iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.about-video::after {
+  content: "";
+  position: absolute;
+  /* background-image: ; */
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text p {
+  margin-top: 20px;
+}
+
+.about-mission-vision {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+  margin: 31px 0;
+}
+
+.about-vision-heading-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-mission {
+  background-color: #f9f9f9;
+  width: 50%;
+  padding: 20px 30px;
+}
+
+.about-vision {
+  background-color: #f9f9f9;
+  width: 50%;
+  padding: 20px 30px;
+}
+
+.about-mission-vision h3 {
+  color: black;
+}
+
+.about-mission-vision p {
+  margin: 0;
+}
+
+button.learn {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 18px 32px;
+  margin-top: 10px;
+}
+
+button.learn:hover {
+  color: #000;
+}
+
+.about-videos {
+  padding-top: 70px;
+  width: 100%;
+  display: flex;
+  column-gap: 67px;
+  position: relative;
+}
+
+.about-videos::before {
+  content: "";
+  background: url(../image/dash.svg);
+  top: 50%;
+  left: -166px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.about-videos::after {
+  content: "";
+  background: url(../image/bookk.svg);
+  top: -56px;
+  right: 83px;
+  position: absolute;
+  width: 122px;
+  height: 73px;
+  background-repeat: no-repeat;
+}
+
+.about-video-ott {
+  width: 31%;
+}
+
+.about-video-ott iframe {
+  width: 100%;
+}
+
+/************************************about end***********************/
+/***************************************service********************************/
+.extra-height {
+  height: 247px;
+  object-fit: cover;
+}
+
+.service {
+  width: 100%;
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.service-slider-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.4%, #000 100%);
+  padding: 30px;
+}
+
+.service-slider-item {
+  position: relative;
+  width: 25%;
+}
+
+.service-slider-item {
+  margin: 0 20px;
+}
+
+.service-slider-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.service-slider-item-text h3 {
+  font-weight: 600;
+}
+
+.service-slider-item-text p::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: red;
+  top: 79px;
+  left: 32px;
+  /* display: none; */
+}
+
+.service-slider-item-text h3 {
+  padding-bottom: 10px;
+}
+
+.service-slider-item-text p {
+  padding-top: 10px;
+  color: #fff;
+  display: none;
+}
+
+.service-slider {
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  position: relative;
+}
+
+.service-slider::after {
+  content: "";
+  background: url(../image/camer.svg);
+  top: -116px;
+  left: 35px;
+  position: absolute;
+  width: 98px;
+  height: 81px;
+  background-repeat: no-repeat;
+}
+
+.service-slider::before {
+  content: "";
+  background: url(../image/dash.svg);
+  top: -128px;
+  right: 173px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.service-main {
+  text-align: center;
+}
+
+.service-main h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-current .service-slider-item-text p {
+  display: block;
+}
+
+.service-slider .slick-dots li button:before {
+  top: 10px !important;
+  left: -10px !important;
+  color: red !important;
+  z-index: 9 !important;
+}
+
+/**********************************************maxnet*********************************/
+section.maxnet {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.maxnet-tourism {
+  width: 100%;
+  text-align: center;
+}
+
+.maxnet-tourism h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.maxnet-tourism-detail {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  column-gap: 41px;
+  justify-content: center;
+  position: relative;
+}
+
+.maxnet-tourism-detail::after {
+  content: "";
+  background: url(../image/dash.svg);
+  top: -71px;
+  left: 305px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.maxnet-tourism-detail::before {
+  content: "";
+  background: url(../image/plane.svg);
+  top: -172px;
+  right: -166px;
+  position: absolute;
+  width: 232px;
+  height: 156px;
+  background-repeat: no-repeat;
+}
+
+.maxnet-tourism-detail-img-text h3 {
+  color: #000;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.maxnet-tourism-detail-img-text h3::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #e65125;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.maxnet-tourism-detail-img-text p {
+  padding-top: 15px;
+}
+
+.maxnet-tourism-detail-img-text {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 30px 45px;
+  width: 25%;
+}
+
+.pos {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+  top: -330px;
+}
+
+.our-team {
+  text-align: left;
+  padding-top: 50px;
+}
+
+.our-team h2::after {
+  left: 0;
+  transform: none;
+}
+
+.our-team-img-text {
+  width: 25%;
+}
+
+.our-team-img-text p {
+  font-weight: 600;
+  color: #e65125;
+}
+
+.our-team-img-text h4 {
+  padding-top: 10px;
+}
+
+.our-team-img-text img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.our-amazing-team {
+  padding-top: 30px;
+  display: flex;
+  column-gap: 55px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.our-amazing-team::after {
+  content: "";
+  background: url(../image/dash.svg);
+  top: -35px;
+  right: 132px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.our-amazing-team::before {
+  content: "";
+  background: url(../image/compass.svg);
+  bottom: -100px;
+  left: -110px;
+  position: absolute;
+  width: 77px;
+  height: 85px;
+  background-repeat: no-repeat;
+}
+
+/***********************************************Agent-for-major***********************/
+
+.majorpad {
+  background-color: #fff !important;
+  padding-bottom: 214px !important;
+  padding-top: 0 !important;
+}
+
+.Agent-for-major {
+  background: #f9f9f9;
+  padding: 68px 0;
+}
+
+.agent-for-major {
+  text-align: center;
+}
+
+.agent-for-major h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.agent-for-major-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 145px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.agent-for-major-img::before {
+  content: "";
+  background: url(../image/Vector.svg);
+  top: -101px;
+  left: -42px;
+  position: absolute;
+  width: 47px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+
+.agent-for-major-img::after {
+  content: "";
+  background: url(../image/dash.svg);
+  top: -131px;
+  right: 360px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.agent-for-major-img img {
+  width: 11%;
+  mix-blend-mode: darken;
+}
+
+/*****************************************reviews*********************************/
+
+.reviews {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  line-height: 0;
+}
+
+.reviews-image {
+  width: 50%;
+  height: auto;
+}
+
+.reviews-image img {
+  width: 100%;
+  height: 651px;
+  object-fit: cover;
+  /* height: 100%; */
+  line-height: 0;
+}
+
+.slick-dots li.slick-active button:before {
+  border: 1px solid;
+  border-radius: 100%;
+}
+
+.reviews-img-text {
+  width: 50%;
+  background-image: url(../image/top-reviews2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+}
+
+.reviews-img-text-slide h2 {
+  color: #fff;
+}
+
+.reviews-img-text-slide h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reviews-img-text-slide img {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.reviews-img-text-slide h4 {
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.reviews-img-text-slide p {
+  padding-bottom: 30px;
+  color: #fff;
+  max-width: 646px;
+  margin: 0 auto;
+}
+
+.reviews-img-text-slide {
+  padding: 88px 0;
+}
+
+.reviews-star {
+  padding-bottom: 40px;
+}
+
+.reviews-img-text .slick-slide {
+  margin: 0 120px;
+  text-align: center;
+}
+
+.reviews-img-text-slide .slick-slide .slick-current .slick-active {
+  text-align: center;
+}
+
+.reviews-img-text .slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews-img-text .slick-dots li button:before {
+  top: -100px !important;
+  left: -10px !important;
+  color: red !important;
+  z-index: 9 !important;
+}
+
+.reviews-img-text .slick-initialized.slick-slider.slick-dotted {
+  overflow: hidden;
+}
+
+.reviews-img-text.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+/***********************************************news*************************************/
+
+.news {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.Latest-News {
+  text-align: center;
+}
+
+.Latest-News h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Latest-News-Articles-slider {
+  text-align: left;
+  padding-top: 30px;
+  position: relative;
+}
+
+.Latest-News-Articles-slider::before {
+  content: "";
+  background: url(../image/book.svg);
+  top: -150px;
+  left: -168px;
+  position: absolute;
+  width: 146px;
+  height: 171px;
+  background-repeat: no-repeat;
+}
+
+.Latest-News-Articles-slider::after {
+  content: "";
+  background: url(../image/dash.svg);
+  top: -95px;
+  right: 46px;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.Latest-News-Articles h3 {
+  color: #000;
+}
+
+.Latest-News-Articles a {
+  color: #e65125;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.Latest-News-Articles a:hover {
+  color: #ef8b31;
+}
+
+span.calender {
+  color: #fff;
+  background: #e65125;
+  text-align: center;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.date-comment-admit {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 18px;
+  padding-top: 20px;
+}
+
+.comment-admit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+span.black {
+  color: black;
+}
+
+.Latest-News-Articles {
+  line-height: 0;
+}
+
+.Latest-News-Articles h3 {
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.Latest-News-Articles a {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.Latest-News-Articles img {
+  width: 100%;
+  height: auto;
+}
+
+.Latest-News-Articles {
+  margin: 0 18px !important;
+}
+
+.Latest-News-Articles-slider .slick-dots li button:before {
+  top: 10px !important;
+  left: -10px !important;
+  color: red !important;
+  z-index: 9 !important;
+}
+
+/****************************************footer**************************************/
+
+footer {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 100px;
+}
+
+.footer-top {
+  position: relative;
+}
+
+.newsletter {
+  width: 100%;
+  background-image: url(../image/newsletter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -191px;
+  box-sizing: border-box;
+}
+
+.newsletter-text h2 {
+  color: #fff;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.newsletter-text h2::after {
+  display: none;
+}
+
+.newsletter-text p {
+  color: #fff;
+}
+
+input.email {
+  color: #6e6e6e;
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 24px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter-input {
+  width: 50%;
+  position: relative;
+}
+
+.subscribe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 26px 45px;
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button.subscribe:hover {
+  color: #000;
+  transition: all 0.3s;
+}
+
+.footer .header-menu ul {
+  justify-content: end;
+}
+
+.header-menu .dropdown {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 17px 0; */
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+hr {
+  margin: 0;
+  opacity: 0.6;
+}
+
+.footer-copyright {
+  width: 100%;
+  background: black;
+}
+
+.copyright p {
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.footer-shop-contact-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer-shop {
+  width: 25%;
+}
+
+.footer-shop img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-contact {
+  width: 25%;
+}
+
+.footer-social {
+  width: 25%;
+}
+
+.footer-contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact li {
+  padding-left: 30px;
+}
+
+.footer-contact li a {
+  color: #000;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact li a svg {
+  padding-right: 10px;
+}
+
+li.border {
+  border-right: 2px solid #ffffff3b;
+  padding-right: 63px;
+  padding-left: 0;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.footer-social svg:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.footer-contact svg {
+  width: 28px;
+}
+
+/********************************* homepage end**************************************/
+
+/*****************************************about-us********************************/
+
+/*****************************************dubai-banner**********************/
+.dubai-banner {
+  background-image: url(../image/dubai.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.dubai-banner-background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.958420868347339) 0%,
+      rgba(0, 0, 0, 0.6755077030812324) 50%,
+      rgba(0, 212, 255, 0) 100%);
+  width: 100%;
+  padding-top: 74px;
+  padding-bottom: 94px;
+}
+
+/**************************************our-value*******************************/
+
+.our-value {
+  padding-top: 100px;
+}
+
+.our-value-ethic-passion-result {
+  background: #fff;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.our-value-ethic-passion-result-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 30px;
+}
+
+.heading-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.heading-logo h5::after {
+  width: 25px;
+  height: 3px;
+  content: "";
+  background: #e65125;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.heading-logo h5 {
+  padding-bottom: 15px;
+}
+
+.our-value-ethic-passion-result p {
+  padding-top: 10px;
+}
+
+.our-value-main h2 {
+  text-align: center;
+}
+
+.our-value-main h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ************************choose-us************************** */
+
+.choose-us {
+  width: 100%;
+  background-image: url(../image/beautyof\ world.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.choose-us-background {
+  background: #00000099;
+  padding: 100px;
+}
+
+.abs {
+  position: absolute;
+  top: -194px;
+  z-index: 2;
+}
+
+.abs::after {
+  top: 290px;
+  left: -104px;
+}
+
+.abs::before {
+  display: none;
+}
+
+.choose-us-text {
+  text-align: center;
+}
+
+.choose-us-text h3 {
+  padding-bottom: 10px;
+  color: #e65125;
+}
+
+.choose-us-text h2 {
+  color: #fff;
+}
+
+.choose-us-text h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.choose-us-text p {
+  color: #fff;
+  max-width: 780px;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+
+/* ************************************about-maxnet********************************* */
+
+.abs {
+  position: absolute;
+  top: -309px;
+  z-index: 2;
+}
+
+.abs::after {
+  top: 290px;
+  left: -104px;
+}
+
+.abs::before {
+  display: none;
+}
+
+section.about-maxnet {
+  padding-top: 214px;
+}
+
+.about-maxnet-team::after {
+  display: none;
+}
+
+.about-major-img::after {
+  display: none;
+}
+
+/* ***************about-footer********* */
+
+.about-pasport::after {
+  position: absolute;
+  content: "";
+  top: -107px;
+  right: 0;
+  background: url(../image/pasport.svg);
+  width: 88px;
+  height: 94px;
+}
+
+/*****************************************about-us end********************************/
+
+/*****************************destionations***********************/
+
+.singapore-banner {
+  background-image: url(../image/singa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.singapore-banner-background {
+  width: 100%;
+  padding-top: 74px;
+  padding-bottom: 94px;
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%);
+}
+
+.destination-text h3 {
+  color: #000;
+}
+
+.popular-destination {
+  width: 100%;
+  padding-bottom: 190px;
+  padding-top: 100px;
+}
+
+.popular-destination h2 {
+  text-align: center;
+}
+
+.popular-destination h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Popular-destinations-UAE {
+  width: 100%;
+  padding-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+a.find-now {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #e65125;
+  padding: 18px 37px;
+  display: inline-block;
+  margin-top: 40px;
+  border: 1px solid;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s;
+}
+
+a.find-now:hover {
+  color: white;
+  z-index: 1;
+}
+
+a.find-now::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e65125;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+a.find-now:hover::before {
+  color: black;
+  width: 100%;
+  z-index: -1;
+}
+
+.destination-text h3 {
+  font-weight: 600;
+}
+
+.destinations {
+  width: 28%;
+}
+
+.destination-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.destination-img {
+  line-height: 0;
+}
+
+.destination-text {
+  padding-top: 24px;
+}
+
+.destination-text p {
+  margin-top: 10px;
+}
+
+/*****************************destionations end***********************/
+
+/*******************************blogs*********************************/
+
+.blogs {
+  width: 100%;
+  padding-bottom: 190px;
+  padding-top: 100px;
+}
+
+.blogs-img-text-main {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.blogs-heading h2 {
+  text-align: center;
+}
+
+.blogs-heading h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a.readme {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #e65125;
+  padding: 18px 37px;
+  display: inline-block;
+  margin-top: 40px;
+  border: 1px solid;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s;
+}
+
+a.readme:hover {
+  color: white;
+  z-index: 1;
+}
+
+a.readme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e65125;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+a.readme:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+.blogs-text h3 {
+  color: #000;
+  padding-top: 33px;
+  font-weight: 700;
+}
+
+.blogs-text p {
+  padding-top: 22px;
+}
+
+.blogs-img-text {
+  width: 45%;
+}
+
+.blogs-img-text img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.read-cal {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+.cal p {
+  padding: 0;
+  color: #414141;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.6%;
+  /* 20.896px */
+  text-transform: capitalize;
+}
+
+.cal {
+  display: flex;
+  gap: 10px;
+}
+
+.view-more {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-blog .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.size-width {
+  max-width: 631px;
+  margin: 40px 0;
+}
+
+.size-color {
+  color: #e65125 !important;
+  font-weight: 500 !important;
+  padding-bottom: 50px !important;
+}
+
+.blog-img-text-main img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.only-width {
+  max-width: 993px;
+  width: 100%;
+  padding-top: 48px;
+}
+
+.para-margin {
+  margin: 30px 0;
+}
+
+p.pera {
+  color: #454f5f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.view-more .readme {
+  margin-top: 0;
+}
+
+/*******************************************blogs end*************************/
+
+/*******************************contact-us************************************/
+
+.address {
+  padding-top: 88px;
+}
+
+.phone {
+  padding: 73px 0;
+}
+
+.email-address-phone {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  column-gap: 44px;
+}
+
+h4.same-size-width {
+  color: #000;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 41.6px */
+}
+
+p.same-text-size {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 28.8px */
+  padding-top: 23px;
+}
+
+section.contact-us {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.address-contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+form.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-input {
+  width: 47%;
+  color: var(--Unnamed-Color, #555);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 26px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 26px 20px;
+  color: var(--Unnamed-Color, #555);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.contact-us-form {
+  width: 50%;
+  padding: 57px 51px;
+  background-color: #ffe6df;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.contact-form-heading h5 {
+  color: #412451;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  /* 32px */
+  padding-bottom: 30px;
+}
+
+.contact-form-heading h2 {
+  color: #000;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.contact-form-heading h2::after {
+  width: 60px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e65125;
+}
+
+.contact-map {
+  padding-top: 70px;
+  width: 100%;
+  padding-bottom: 90px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 581px;
+}
+
+.map {
+  line-height: 0;
+}
+
+label.size {
+  color: var(--Unnamed-Color, #555);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.checkbox-button .readme {
+  margin-top: 40px;
+}
+
+.contact-form-heading {
+  width: 100%;
+}
+
+.readme-one {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 18px 37px;
+  background: #e65125;
+  border: none;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-us .container {
+  max-width: 1500px;
+  width: 100%;
+}
+
+/******************************************contact-us end*************************/
+
+/*******************************************Tourist Visa*************************/
+
+.Tourist-Visa {
+  background-image: url(../image/visa.png) !important;
+}
+
+/***************************************************Inbound services*****************************/
+
+.Inbound-services {
+  background-image: url(../image/is.png) !important;
+}
+
+/********************Inbound services Tourist Visa default*********************/
+
+.blank {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.Inbound-services-Tourist-Visa-main {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.Inbound-services-Tourist-Visa-main .container {
+  max-width: 1185px;
+}
+
+.Inbound-services-Tourist-Visa-text-img-side-col {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  column-gap: 60px;
+}
+
+.Inbound-services-Tourist-Visa-text-img {
+  width: 63%;
+}
+
+p.only-for-padding {
+  padding-top: 20px;
+}
+
+.Inbound-services-Tourist-Visa-text-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.Inbound-services-Tourist-Visa-side-col {
+  width: 33.5%;
+}
+
+.search-any {
+  padding: 19px 16px;
+  background: #f9f9f9;
+}
+
+.Inbound-services-Tourist-Visa-side-col h3 {
+  color: var(--Body-Text, #222);
+  font-weight: 600;
+  line-height: 130%;
+  /* 39px */
+  margin-bottom: 20px;
+}
+
+input.search-in {
+  width: 100%;
+  color: #cbd5dc;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 19px 24px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--White, #fff);
+}
+
+.recent {
+  padding: 28px 30px;
+  background: #f9f9f9;
+  margin: 30px 0;
+}
+
+.recent h3,
+.few-click h3 {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.recent h3::after,
+.few-click h3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 6px;
+  background: #e65125;
+}
+
+.few-click {
+  padding: 40px 31px;
+  background: #f9f9f9;
+}
+
+.recent-img-text {
+  display: flex;
+  gap: 19px;
+  margin: 30px 0;
+}
+
+.recent-img-text:nth-child(1) {
+  margin-top: 0 !important;
+}
+
+.recent-img-text:nth-child(5) {
+  margin-bottom: 0 !important;
+}
+
+.svg-para {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.svg-para p {
+  color: #6e6e6e !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+}
+
+.recent-text p {
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 23.4px */
+  margin: 4px 0;
+}
+
+.recent-text a {
+  color: #6e6e6e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  /* 20.8px */
+  text-decoration-line: underline;
+}
+
+.recent-text a:hover {
+  color: #e65125;
+  transition: all 0.3s;
+}
+
+.recent-img img {
+  line-height: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.where-when-type {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+#travel-type,
+#date-when,
+#Location-where {
+  color: #9a9a9a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  padding: 19px 42px;
+  margin-top: 10px;
+}
+
+.where-when-type p {
+  color: #000;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.accordin-minus-one,
+.accordin-minus-two,
+.accordin-minus-three,
+.accordin-minus-four,
+.accordin-minus-five,
+.accordin-text-one,
+.accordin-text-two,
+.accordin-text-three,
+.accordin-text-four,
+.accordin-text-five {
+  display: none;
+}
+
+.accordin {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.accordin-head-plus-minus-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ececec;
+}
+
+.accordin-head h5 {
+  color: #000;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.accordin-plus-minus {
+  color: #e65125;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.accordin-text-one p,
+.accordin-text-two p,
+.accordin-text-three p,
+.accordin-text-four p,
+.accordin-text-five p {
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+
+.accordin-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ankush {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  background: #e65125;
+  display: none;
+  color: #fff;
+}
+
+.lkj .accordin-plus-minus {
+  color: #e65125;
+}
+
+.min {
+  display: none;
+}
+
+.lkj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ececec;
+}
+
+.accordin-head-plus-minus-text-six {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #e65125; */
+  padding-bottom: 20px;
+}
+
+.ankush .accordin-head-plus-minus-text-six .accordin-head h5 {
+  color: #fff;
+  /* padding-bottom: 20px; */
+}
+
+.ankush .accordin-head-plus-minus-text-six .accordin-plus-minus {
+  color: #fff;
+}
+
+.ankush hr {
+  opacity: 0.1;
+}
+
+.ankush .accordin-text-two-show p {
+  /* color: #fff !important; */
+  padding-top: 20px;
+
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+
+/************five********************/
+
+.accordin-head-plus-minus-text-five,
+.accordin-head-plus-minus-text-four,
+.accordin-head-plus-minus-text-three,
+.accordin-head-plus-minus-text-two,
+.accordin-head-plus-minus-text-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.accordin-head-plus-minus-text-h-s,
+.accordin-head-plus-minus-text-hi-sh,
+.accordin-head-plus-minus-text-hid-sho,
+.accordin-head-plus-minus-text-hide-show,
+.accordin-head-plus-minus-text-hides-shows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ececec;
+  padding: 20px;
+}
+
+.accordin-text-one,
+.accordin-text-two,
+.accordin-text-three,
+.accordin-text-four,
+.accordin-text-five {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  background: #e65125;
+}
+
+.accordin-text-one hr,
+.accordin-text-two hr,
+.accordin-text-three hr,
+.accordin-text-four hr,
+.accordin-text-five hr {
+  opacity: 0.1;
+}
+
+.accordin-head-plus-minus-text-five .accordin-head h5,
+.accordin-head-plus-minus-text-four .accordin-head h5,
+.accordin-head-plus-minus-text-three .accordin-head h5,
+.accordin-head-plus-minus-text-two .accordin-head h5,
+.accordin-head-plus-minus-text-one .accordin-head h5 {
+  color: #fff;
+}
+
+.accordin-text-one .accordin-plus-minus,
+.accordin-text-two .accordin-plus-minus,
+.accordin-text-three .accordin-plus-minus,
+.accordin-text-four .accordin-plus-minus,
+.accordin-text-five .accordin-plus-minus {
+  color: #fff;
+}
+
+.accordin-text-five-show p,
+.accordin-text-four-show p,
+.accordin-text-three-show p,
+.accordin-text-two-show p,
+.accordin-text-one-show p {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+
+/*******************************************Tourist Visa end*************************/
+
+/*************************************responsive**********************************/
+
+/*************************************1566px**********************************/
+@media (max-width: 1920px) {
+  .about-video-text::before {
+    right: 0;
+  }
+
+  .maxnet-tourism-detail::before {
+    right: 0;
+  }
+}
+
+@media (max-width: 1566px) {
+  .reviews-image img {
+    height: 100%;
+  }
+
+  .header-search-button {
+    width: auto;
+  }
+
+  .footer-contact {
+    width: 31%;
+  }
+}
+
+/*************************************1433**************************************************************/
+@media (max-width: 1433px) {
+  .about-video iframe {
+    height: 527px;
+  }
+
+  .agent-for-major-img img {
+    overflow: auto;
+  }
+
+  .footer .header-menu {
+    width: 57%;
+  }
+}
+
+/*************************************1280**************************************************************/
+@media (max-width: 1280px) {
+  .footer-contact {
+    width: 31%;
+  }
+
+  .abs {
+    position: static;
+  }
+
+  section.about-maxnet {
+    padding: 70px 0;
+  }
+
+  .footer-shop {
+    width: 25%;
+  }
+
+  .service-slider-item-text p::after {
+    top: 57px;
+    left: 10px;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  .footer .header-menu {
+    width: 70%;
+  }
+
+  li.border {
+    padding-right: 35px;
+    padding-left: 0 !important;
+  }
+
+  .footer-contact li {
+    padding-left: 17px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .about-video iframe {
+    height: 552px;
+  }
+
+  .maxnet-tourism-detail {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .service-slider-item-text {
+    padding: 10px;
+  }
+
+  .service-slider-item {
+    margin: 0 20px;
+  }
+
+  .maxnet-tourism-detail-img-text {
+    width: 46%;
+  }
+}
+
+/****************************************1238*********************************************/
+
+@media (max-width: 1238px) {
+  .about-mission-vision {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .about-mission {
+    width: 100%;
+  }
+
+  .about-vision {
+    width: 100%;
+  }
+
+  .about-video iframe {
+    height: 658px;
+  }
+}
+
+/***************************1232*****************************************/
+
+@media (max-width: 1232px) {
+  .contact-input {
+    width: 100%;
+  }
+}
+
+/**********************************************1129**************************************************/
+
+@media (max-width: 1129px) {
+  .maxnet-tourism-detail-img-text {
+    width: 45%;
+  }
+
+  .header-menu li {
+    padding: 10px 20px;
+  }
+}
+
+/*************************************1024**************************************************************/
+@media (max-width: 1025px) {
+  .about-videos::after {
+    display: none;
+  }
+
+  .address-contact-form {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section.contact-us {
+    padding-top: 70px;
+  }
+
+  .address {
+    padding-top: 70px;
+  }
+
+  .contact-input {
+    width: 47%;
+  }
+
+  .phone {
+    padding: 70px 0;
+  }
+
+  .contact-us-form {
+    width: 100%;
+  }
+
+  .our-value {
+    padding-top: 70px;
+  }
+
+  .choose-us-background {
+    padding: 70px 0;
+  }
+
+  .our-team {
+    padding-top: 35px;
+  }
+
+  .maxnet-tourism-detail {
+    padding-bottom: 35px;
+  }
+
+  .blogs {
+    padding-bottom: 170px;
+    padding-top: 70px;
+  }
+
+  .agent-for-major-img::before {
+    display: none;
+  }
+
+  .about-video-ott.end {
+    display: none;
+  }
+
+  .our-amazing-team::after {
+    display: none;
+  }
+
+  .maxnet-tourism-detail::after {
+    display: none;
+  }
+
+  .service-slider::after {
+    display: none;
+  }
+
+  .service-slider::before {
+    display: none;
+  }
+
+  .about-video-text::before {
+    display: none;
+  }
+
+  .agent-for-major-img::after {
+    display: none;
+  }
+
+  .maxnet-tourism-detail::before {
+    display: none;
+  }
+
+  .Latest-News-Articles-slider::after {
+    display: none;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  .newsletter {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .about-mission-vision {
+    flex-direction: row;
+  }
+
+  .subscribe {
+    padding: 25px 31px;
+    font-size: 19px;
+  }
+
+  .newsletter-text h2 {
+    padding-bottom: 10px;
+  }
+
+  li.border {
+    padding-right: 18px;
+    padding-left: 0 !important;
+  }
+
+  .reviews-img-text .slick-slide {
+    margin: 0 60px;
+  }
+
+  .about-video-ott iframe {
+    height: 510px;
+  }
+
+  .header-toogle-menu ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+  }
+
+  h1 {
+    font-size: 94px;
+  }
+
+  .header-toggle-menu {
+    display: block;
+    order: 3;
+  }
+
+  .header-menu-main {
+    display: none;
+  }
+
+  .header-toggle-menu .header-menu ul {
+    flex-direction: column;
+  }
+
+  .service {
+    padding: 70px 0;
+  }
+
+  .about {
+    padding: 70px 0;
+  }
+
+  section.maxnet {
+    padding: 70px 0;
+  }
+
+  .reviews-img-text-slide {
+    padding: 70px 0;
+  }
+
+  .header-toogle-menu ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+
+  .header-toggle {
+    display: block;
+    order: 3;
+    width: 27px;
+  }
+
+  .header-search-button {
+    width: 77%;
+  }
+
+  .header-toogle-menu .dropdown ul {
+    row-gap: 0 !important;
+  }
+
+  .header-menu {
+    width: 78%;
+  }
+
+  .about-videos {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .about-video-ott {
+    width: 100%;
+  }
+
+  .about-video-text {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-video {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .our-amazing-team {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .our-team-img-text {
+    width: 45%;
+  }
+
+  .reviews-image {
+    display: none;
+  }
+
+  .reviews-img-text-slide {
+    max-width: 100%;
+  }
+
+  .header-logo {
+    width: 14%;
+  }
+
+  .footer-contact {
+    width: 37%;
+  }
+
+  .footer-social {
+    width: 30%;
+  }
+
+  .reviews-img-text .slick-slide {
+    margin: 0 0;
+  }
+
+  .service-slider-item-text p::after {
+    top: 52px;
+    left: 12px;
+  }
+
+  .reviews-img-text {
+    width: 100%;
+  }
+
+  .about-video iframe {
+    height: 468px;
+  }
+
+  .agent-for-major-img {
+    column-gap: 100px;
+  }
+
+  .about-video-ott iframe {
+    height: 470px;
+  }
+
+  .footer {
+    padding-top: 100px;
+  }
+
+  .Inbound-services-Tourist-Visa-main {
+    padding: 70px 0;
+  }
+
+  .singapore-banner-background {
+    padding-bottom: 74px;
+  }
+
+  .blank {
+    padding-top: 70px;
+  }
+
+  .popular-destination {
+    padding-bottom: 170px;
+    padding-top: 70px;
+  }
+}
+
+/********************************991****************************************/
+
+@media (max-width: 991px) {
+  .Inbound-services-Tourist-Visa-text-img-side-col {
+    column-gap: 40px;
+  }
+}
+
+/********************************900*****************************************/
+
+@media (max-width: 900px) {
+  .newsletter {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  .newsletter-text {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 127px;
+  }
+
+  .header-menu ul {
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .header-menu li {
+    padding: 0px 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  button.bookcall {
+    margin-top: 10px;
+  }
+
+  footer .header-menu li {
+    padding: 0px 20px;
+  }
+}
+
+/*************************************989***************************************/
+
+@media (max-width: 989px) {
+  .header-menu li {
+    padding: 10px 23px;
+  }
+}
+
+/*************************************853********************/
+
+@media (max-width: 853px) {
+  .footer-contact {
+    width: 100%;
+  }
+
+  a.readme {
+    padding: 15px 30px;
+  }
+
+  .footer {
+    padding-top: 127px;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+  }
+
+  .footer .header-menu {
+    width: 100%;
+  }
+
+  .footer-shop {
+    width: 50%;
+    order: 3;
+  }
+
+  .footer-shop-contact-social {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 213px;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-social ul {
+    justify-content: center;
+  }
+
+  .footer .header-menu ul {
+    justify-content: center;
+  }
+
+  .Latest-News-Articles {
+    margin: 0 11px !important;
+  }
+
+  .Inbound-services-Tourist-Visa-text-img-side-col {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .Inbound-services-Tourist-Visa-text-img {
+    width: 100%;
+  }
+
+  .Inbound-services-Tourist-Visa-side-col {
+    width: 100%;
+  }
+
+  .Inbound-services-Tourist-Visa-side-col {
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .search-any {
+    width: 100%;
+  }
+
+  .few-click {
+    width: 100%;
+  }
+
+  .recent {
+    margin: 0;
+    width: 100%;
+  }
+
+  .search-any h3,
+  .few-click h3,
+  .recent h3 {
+    font-size: 28px;
+  }
+
+  .destinations {
+    width: 46%;
+  }
+
+  .Popular-destinations-UAE {
+    padding-top: 65px;
+    justify-content: space-between;
+    gap: 41px;
+  }
+}
+
+/********************************767*****************************************/
+
+@media (max-width: 768px) {
+  button.bookcall {
+    padding: 10px 24px;
+  }
+
+  .size-width {
+    margin: 30px 0;
+  }
+
+  .size-color {
+    padding-bottom: 30px !important;
+  }
+
+  .only-width {
+    padding-top: 30px;
+  }
+
+  .para-margin {
+    margin: 15px 0;
+  }
+
+  .contact-us-form {
+    padding: 50px 40px;
+  }
+
+  section.contact-us {
+    padding-top: 50px;
+  }
+
+  section.contact-us {
+    padding-top: 50px;
+  }
+
+  .address {
+    padding-top: 50px;
+  }
+
+  .phone {
+    padding: 50px 0;
+  }
+
+  .blogs-img-text-main {
+    padding-top: 50px;
+    gap: 50px;
+  }
+
+  .our-value-ethic-passion-result-main {
+    flex-direction: column;
+  }
+
+  .maxnet-tourism-detail {
+    padding-top: 0px;
+  }
+
+  .choose-us-background {
+    padding: 50px 0;
+  }
+
+  .view-more {
+    padding-top: 50px;
+  }
+
+  .blogs {
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+
+  .banner-blackshade {
+    padding: 150px 0;
+  }
+
+  .header-toogle-menu {
+    top: 73px;
+  }
+
+  .header-toogle-menu li a {
+    font-size: 19px;
+  }
+
+  .about-video iframe {
+    height: 370px;
+  }
+
+  .maxnet-tourism-detail-img-text {
+    width: 100%;
+  }
+
+  .agent-for-major-img {
+    column-gap: 51px;
+  }
+
+  .about-video iframe {
+    height: 380px;
+  }
+
+  .about-video-ott iframe {
+    height: 370px;
+  }
+
+  .reviews {
+    overflow: hidden;
+  }
+
+  .reviews-img-text {
+    padding: 0 49px;
+  }
+
+  .news {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  .reviews-img-text-slide {
+    padding: 50px 0;
+  }
+
+  .Agent-for-major {
+    padding: 50px 0;
+  }
+
+  section.maxnet {
+    padding: 50px 0;
+  }
+
+  .our-team {
+    padding-top: 25px;
+  }
+
+  .maxnet-tourism-detail {
+    padding-bottom: 25px;
+  }
+
+  .maxnet-tourism-detail {
+    gap: 35px;
+  }
+
+  .service {
+    padding: 50px 0;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .footer-shop-contact-social {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact {
+    width: 50%;
+  }
+
+  .footer-shop-contact-social {
+    flex-wrap: wrap;
+    gap: 20px;
+    column-gap: 150px;
+    justify-content: center;
+  }
+
+  .reviews-img-text .slick-dots li button:before {
+    left: -48px !important;
+    top: -85px !important;
+  }
+
+  .Inbound-services-Tourist-Visa-main {
+    padding: 50px 0;
+  }
+
+  .singapore-banner-background {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .blank {
+    padding-top: 50px;
+  }
+
+  .popular-destination {
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+
+  a.find-now {
+    font-size: 19px;
+    padding: 15px 30px;
+    margin-top: 30px;
+  }
+}
+
+/**********************************749**********************************************/
+
+@media (max-width: 749px) {
+  .Latest-News-Articles {
+    margin: 0 10px !important;
+  }
+}
+
+/***************************************************710**************************/
+
+@media (max-width: 710px) {
+  .copyright {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/*******************************************669*********************************/
+
+@media (max-width: 669px) {
+  .footer-shop {
+    width: 50%;
+  }
+}
+
+/*******************************************666*********************************/
+
+@media (max-width: 666px) {
+  .footer-shop {
+    width: 60%;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .maxnet-tourism-detail-img-text {
+    width: 100%;
+  }
+
+  .footer-shop-contact-social {
+    padding: 30px 0;
+  }
+
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-social ul {
+    justify-content: center;
+  }
+
+  .header-logo {
+    width: 25%;
+  }
+
+  .header-search-button {
+    width: 64%;
+  }
+
+  .header-menu li {
+    padding: 0px 15px;
+  }
+
+  .footer .header-menu {
+    width: 100%;
+  }
+
+  .footer {
+    padding-bottom: 30px;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .footer .header-menu ul {
+    justify-content: center;
+  }
+}
+
+/******************************************629************************************************/
+
+@media (max-width: 629px) {
+  span.calender {
+    font-size: 14px;
+  }
+
+  .blogs-img-text {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .newsletter {
+    padding: 40px 40px;
+  }
+
+  .blogs-text h3 {
+    padding-top: 20px;
+  }
+}
+
+/**************************************609**************************************/
+
+@media (max-width: 609px) {
+  .about-mission-vision {
+    flex-direction: column;
+  }
+}
+
+/***********************************************597*********************************************/
+
+@media (max-width: 597px) {
+  footer .header-menu li {
+    padding: 0px 11px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/*******************************************************567*********************************/
+
+@media (max-width: 567px) {
+  p.same-text-size {
+    padding-top: 15px;
+  }
+}
+
+/*******************************************************545*********************************/
+
+@media (max-width: 545px) {
+  .our-amazing-team {
+    gap: 34px;
+  }
+
+  .contact-form-heading h2 {
+    font-size: 35px;
+  }
+
+  .contact-form-heading h5 {
+    padding-bottom: 15px;
+  }
+
+  input.email {
+    font-size: 16px;
+    padding: 17px 9px;
+  }
+
+  .subscribe {
+    padding: 19px 15px;
+    font-size: 16px;
+  }
+
+  .banner-blackshade {
+    padding: 110px 0;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .footer-shop {
+    width: 100%;
+  }
+
+  .newsletter {
+    padding: 30px 27px;
+  }
+
+  .footer {
+    padding-top: 100px;
+  }
+
+  .top-number-mail svg {
+    width: 27px;
+  }
+
+  .maxnet-tourism-detail-img-text {
+    padding: 20px 30px;
+  }
+
+  .banner-text li a {
+    font-size: 25px;
+  }
+
+  li.home1::after {
+    font-size: 25px;
+  }
+
+  li.home::after {
+    font-size: 25px;
+  }
+
+  .banner-text ul {
+    margin-top: 14px;
+  }
+
+  h2::after {
+    width: 40px;
+    height: 6px;
+  }
+
+  .destinations {
+    width: 100%;
+  }
+
+  .Popular-destinations-UAE {
+    padding-top: 30px;
+  }
+}
+
+/*******************************************************483*********************************/
+
+@media (max-width: 483px) {
+  .footer .header-logo {
+    width: 37%;
+  }
+
+  a.readme {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+}
+
+/*******************************************************451*********************************/
+
+@media (max-width: 451px) {
+  .header-search-button {
+    width: 60%;
+  }
+}
+
+/********************************************425***********************************************/
+
+@media (max-width: 425px) {
+  .header-toogle-menu {
+    top: 66px;
+  }
+
+  .contact-us-form {
+    padding: 30px 20px;
+  }
+
+  .contact-form-heading h2 {
+    font-size: 30px;
+  }
+
+  h4.same-size-width {
+    font-size: 24px;
+  }
+
+  .contact-form-heading h5 {
+    padding-bottom: 10px;
+  }
+
+  .readme-one {
+    font-size: 18px;
+    padding: 10px 21px;
+    margin-top: 20px;
+  }
+
+  .contact-map {
+    padding-top: 30px;
+  }
+
+  .address {
+    padding-top: 30px;
+  }
+
+  .email-address-phone svg {
+    width: 60px !important;
+  }
+
+  .phone {
+    padding: 30px 0;
+  }
+
+  p.same-text-size {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .email-address-phone svg {
+    width: 60px;
+  }
+
+  .contact-input {
+    padding: 20px 15px;
+  }
+
+  form.contact-form {
+    gap: 20px;
+  }
+
+  .map iframe {
+    height: 300px;
+  }
+
+  .header-toogle-menu li a {
+    font-size: 16px;
+  }
+
+  .header-toogle-menu ul {
+    row-gap: 10px;
+  }
+
+  .footer {
+    padding-top: 70px;
+  }
+
+  .agent-for-major-img {
+    justify-content: center;
+  }
+
+  .our-team-img-text {
+    width: 100%;
+  }
+
+  .our-amazing-team {
+    gap: 30px;
+  }
+
+  .maxnet-tourism-detail-img-text {
+    width: 100%;
+  }
+
+  .about-video iframe {
+    height: 278px;
+  }
+
+  .about-mission {
+    width: 100%;
+  }
+
+  .about-vision {
+    width: 100%;
+  }
+
+  .about-mission-vision {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-video-ott iframe {
+    height: 282px;
+  }
+
+  .agent-for-major-img {
+    column-gap: 7px;
+  }
+
+  .agent-for-major-img img {
+    width: 34%;
+  }
+
+  .same-color {
+    padding: 10px 15px;
+  }
+
+  input.email {
+    font-size: 15px;
+    padding: 9px 9px;
+  }
+
+  h2::after {
+    width: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  button.learn {
+    padding: 12px 20px;
+    margin-top: 0px;
+  }
+
+  .top-number-mail li {
+    padding-left: 15px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .same-color {
+    font-size: 17px;
+  }
+
+  .banner-blackshade {
+    padding: 90px 0;
+  }
+
+  .banner-text li a {
+    font-size: 20px;
+  }
+
+  li.home::after {
+    font-size: 20px;
+    right: -20px;
+  }
+
+  li.home1::after {
+    font-size: 20px;
+    right: -20px;
+  }
+
+  .banner-text ul {
+    column-gap: 30px;
+  }
+
+  #travel-type,
+  #date-when,
+  #Location-where {
+    padding: 15px 35px;
+  }
+
+  .accordin h5 {
+    font-size: 18px;
+  }
+
+  .destinations {
+    width: 100%;
+  }
+}
+
+/**************************************************************375*****************************/
+
+@media (max-width: 375px) {
+  span.calender {
+    font-size: 14px;
+  }
+
+  section.contact-us {
+    padding-top: 30px;
+  }
+
+  .choose-us-background {
+    padding: 30px 0;
+  }
+
+  .choose-us-text p {
+    padding-top: 10px;
+  }
+
+  .contact-form-heading h2 {
+    font-size: 25px;
+  }
+
+  .about {
+    padding: 30px 0;
+  }
+
+  .our-value-ethic-passion-result-main {
+    gap: 30px;
+  }
+
+  .blogs-img-text-main {
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  .header-menu ul {
+    flex-wrap: wrap;
+    /* row-gap: 5px; */
+    gap: 7px;
+  }
+
+  .Agent-for-major {
+    padding: 30px 0;
+  }
+
+  .reviews-img-text-slide {
+    padding: 30px 0;
+  }
+
+  .news {
+    padding-top: 30px;
+    padding-bottom: 130px;
+  }
+
+  section.maxnet {
+    padding: 30px 0;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+  }
+
+  .service {
+    padding: 30px 0;
+  }
+
+  .service-slider .slick-dots li button:before {
+    top: 0px !important;
+  }
+
+  .about-video-ott iframe {
+    height: 240px;
+  }
+
+  .about-video iframe {
+    height: 240px;
+  }
+
+  .same-color {
+    font-size: 16px;
+  }
+
+  .reviews-img-text {
+    padding: 0 15px;
+  }
+
+  .reviews-img-text .slick-dots li button:before {
+    left: -13px !important;
+    top: -53px !important;
+  }
+
+  h2 {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+
+  h2::after {
+    width: 30px;
+    height: 4.21px;
+  }
+
+  .agent-for-major-img {
+    padding-top: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .Latest-News-Articles a {
+    font-size: 17px;
+  }
+
+  .Latest-News-Articles a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  button.learn {
+    padding: 8px 17px;
+    margin-top: 0px;
+    font-size: 17px;
+  }
+
+  .banner-blackshade {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .Inbound-services-Tourist-Visa-main {
+    padding: 30px 0;
+  }
+
+  .blank {
+    padding-top: 30px;
+  }
+
+  .popular-destination {
+    padding-bottom: 130px;
+    padding-top: 30px;
+  }
+
+  a.find-now {
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .Popular-destinations-UAE {
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .view-more {
+    padding-top: 40px;
+  }
+
+  .blogs {
+    padding-bottom: 130px;
+    padding-top: 30px;
+  }
+}
+
+/************************************************367***********************************/
+
+@media (max-width: 367px) {
+  span.calender {
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+
+/********************************************320**************************************/
+
+@media (max-width: 320px) {
+  .footer-social svg {
+    width: 32px;
+  }
+
+  .footer .header-logo {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .banner-blackshade {
+    padding: 30px 0;
+  }
+
+  .popular-destination h2 {
+    font-size: 23px;
+  }
+
+  .about-video-ott iframe {
+    height: 206px;
+  }
+
+  .about-video iframe {
+    height: 200px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .footer-contact li a {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  i.fa-solid.fa-magnifying-glass {
+    font-size: 20px;
+  }
+
+  .header-logo-menu-search-button {
+    padding: 13px 0;
+  }
+
+  .header-toogle-menu {
+    top: 59px;
+  }
+
+  .about-mission {
+    padding: 20px;
+  }
+
+  .about-vision {
+    padding: 20px;
+  }
+}
+
+.search {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: #000000c5;
+  width: 100%;
+  height: 100vh;
+}
+
+.search form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search input[type="search"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 5px 15px;
+  font-size: 21px;
+}
+
+.search input[type="search"]::placeholder {
+  color: white;
+}
+
+.blog-heading {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.blog-heading h2 {
+  animation-delay: 0.5s;
+}
+
+.ddd {
+  animation-delay: 1.5s;
+}
+
+p.only-width {
+  animation-delay: 2s;
+}
+
+p.para-margin {
+  animation-delay: 2.5s;
+}
+
+p.para-anim {
+  animation-delay: 3s;
+}
